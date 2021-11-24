@@ -8,19 +8,48 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
+    <div style = "display: -moz-box;
+        display: -webkit-box;
+        width: 100%;">
+      <div style="
+          -webkit-box-shadow: 1px 1px 2px 0px #000;
+          -moz-box-shadow: 1px 1px 2px 0px #000;
+          box-shadow: 1px 1px 2px 0px #000;
+          -moz-box-flex: 1;
+          -webkit-box-flex: 1;
+          margin: 4px;
+          padding: 8px 8px 8px 8px;
+                  ">
+        <h2>Controls</h2>
+        <p>
+          WASD for directional Movement<br>
+          QE for rotating right/left<br>
+          Shift for running<br>
+          Space for jumping<br>
+        </p>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Survival</div>
+      <div id="unity-container" class="unity-desktop" style="
+          -webkit-box-shadow: 1px 1px 2px 0px #000;
+          -moz-box-shadow: 1px 1px 2px 0px #000;
+          box-shadow: 1px 1px 2px 0px #000;
+          -moz-box-flex: 1;
+          -webkit-box-flex: 1;
+          margin: 4px;
+          padding: 8px 8px 8px 8px;
+                  ">
+        <canvas id="unity-canvas" width=960 height=600></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">Survival</div>
+        </div>
       </div>
     </div>
     <script>
@@ -103,14 +132,5 @@
       };
       document.body.appendChild(script);
     </script>
-    <div>
-      <h2>Controls</h2>
-      <p>
-        WASD for directional Movement<br>
-        QE for rotating right/left<br>
-        Shift for running<br>
-        Space for jumping<br>
-      </p>
-    </div>
   </body>
 </html>
