@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop" style = "display: -moz-box;
-      display: -webkit-box;
-      width: 100%;">
-      <div style="
+    <div id="unity-container" class="unity-desktop">
+      <div style = "display: -moz-box;
+        display: -webkit-box;
+        width: 100%;">
+        <div style="
           -webkit-box-shadow: 1px 1px 2px 0px #000;
           -moz-box-shadow: 1px 1px 2px 0px #000;
           box-shadow: 1px 1px 2px 0px #000;
@@ -19,46 +20,51 @@
           -webkit-box-flex: 1;
           margin: 4px;
           padding: 8px 8px 8px 8px;
-          width: 500px;
-                  ">
-        <div>
-          <h2>Objective</h2>
-          <p>Stand in the platform for as long as you can. You claim victory if you stand in the platform for 30 seconds cummulatively.
-            Watch out for the bettle that patrols the area for you will be defeated by one touch.<br><br>
-          </p>
-          <h2>Controls</h2>
-          <p>
-            WASD for directional Movement<br>
-            QE for rotating right/left<br>
-            Shift for running<br>
-            Space for jumping<br>
-          </p>
-        </div>
-      </div>
-      <div style="
-          -webkit-box-shadow: 1px 1px 2px 0px #000;
-          -moz-box-shadow: 1px 1px 2px 0px #000;
-          box-shadow: 1px 1px 2px 0px #000;
-          -moz-box-flex: 1;
-          -webkit-box-flex: 1;
-          margin: 4px;
-          padding: 8px 8px 8px 8px;
-                  ">
-        <canvas id="unity-canvas" width=100% height=600></canvas>
-        <div id="unity-loading-bar">
-          <div id="unity-logo"></div>
-          <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
+          width: 500px;">
+          <div>
+            <h2>Objective</h2>
+            <p>Stand in the platform for as long as you can. You claim victory if you stand in the platform for 30 seconds cummulatively.
+              Watch out for the bettle that patrols the area for you will be defeated by one touch.<br><br>
+            </p>
+            <h2>Controls</h2>
+            <p>
+              WASD for directional Movement<br>
+              QE for rotating right/left<br>
+              Shift for running<br>
+              Space for jumping<br>
+            </p>
           </div>
         </div>
-        <div id="unity-warning"> </div>
-        <div id="unity-footer">
-          <div id="unity-webgl-logo"></div>
-          <div id="unity-fullscreen-button"></div>
-          <div id="unity-build-title">Survival</div>
+        <div style="
+            -webkit-box-shadow: 1px 1px 2px 0px #000;
+            -moz-box-shadow: 1px 1px 2px 0px #000;
+            box-shadow: 1px 1px 2px 0px #000;
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            margin: 4px;
+            padding: 8px 8px 8px 8px;">
+          <canvas id="unity-canvas" width=100% height=600></canvas>
+          <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+              <div id="unity-progress-bar-full"></div>
+            </div>
+          </div>
+          <div id="unity-warning"> </div>
+          <div id="unity-footer">
+            <div id="unity-webgl-logo"></div>
+            <div id="unity-fullscreen-button"></div>
+            <div id="unity-build-title">Survival</div>
+          </div>
         </div>
       </div>
+      <footer>
+        <p style="text-align:center">
+          For more of my work please check me out at my <a href="https://heph0.github.io/AlbertSanchez.github.io/">website</a>
+        </p>
+      </footer>
     </div>
+    
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -140,9 +146,4 @@
       document.body.appendChild(script);
     </script>
   </body>
-  <footer>
-    <p style="text-align:center">
-      For more of my work please check me out at my <a href="https://heph0.github.io/AlbertSanchez.github.io/">website</a>
-    </p>
-  </footer>
 </html>
