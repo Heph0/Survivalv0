@@ -37,7 +37,7 @@
           margin: 4px;
           padding: 8px 8px 8px 8px;
                   ">
-        <canvas id="unity-canvas" width=auto height=600></canvas>
+        <canvas id="unity-canvas" width=75% height=600></canvas>
         <div id="unity-loading-bar">
           <div id="unity-logo"></div>
           <div id="unity-progress-bar-empty">
@@ -111,7 +111,7 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "auto";
+        canvas.style.width = "75%";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
